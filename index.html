@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WhatsApp 2 – Stay Connected</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0b141a;
+      color: #e9edef;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: #202c33;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-circle {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #25d366;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #0b141a;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #e9edef;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: #25d366;
+    }
+
+    .btn-primary {
+      padding: 10px 18px;
+      border-radius: 20px;
+      border: none;
+      background: #25d366;
+      color: #0b141a;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      background: #1bb655;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 8%;
+      gap: 40px;
+    }
+
+    .hero-text {
+      max-width: 480px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.6rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      color: #c4c9cc;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn-secondary {
+      padding: 10px 18px;
+      border-radius: 20px;
+      border: 1px solid #25d366;
+      background: transparent;
+      color: #25d366;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn-secondary:hover {
+      background: #111b21;
+    }
+
+    .hero-mockup {
+      flex: 1;
+      min-width: 260px;
+      max-width: 380px;
+      background: #111b21;
+      border-radius: 24px;
+      padding: 20px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .chat-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .chat-header span {
+      font-size: 0.85rem;
+      color: #c4c9cc;
+    }
+
+    .chat-bubble {
+      max-width: 80%;
+      padding: 10px 14px;
+      border-radius: 16px;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .chat-bubble.me {
+      background: #005c4b;
+      margin-left: auto;
+    }
+
+    .chat-bubble.them {
+      background: #202c33;
+      margin-right: auto;
+    }
+
+    .features {
+      padding: 40px 8%;
+      background: #111b21;
+    }
+
+    .features h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .feature-card {
+      background: #202c33;
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .feature-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .feature-card p {
+      font-size: 0.9rem;
+      color: #c4c9cc;
+      line-height: 1.5;
+    }
+
+    .cta {
+      padding: 40px 8%;
+      text-align: center;
+    }
+
+    .cta p {
+      margin: 10px 0 20px;
+      color: #c4c9cc;
+    }
+
+    footer {
+      padding: 20px 8%;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #7c8083;
+      background: #202c33;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding-top: 40px;
+      }
+
+      .hero-text h1 {
+        font-size: 2.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <div class="logo-circle">W2</div>
+      <span>WhatsApp 2</span>
+    </div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+      <a href="#contact">Contact</a>
+      <button class="btn-primary">Get Started</button>
+    </nav>
+  </header>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Messaging, Reimagined.</h1>
+      <p>
+        WhatsApp 2 is your next‑generation chat app—faster, smarter, and more secure.
+        Connect with anyone, anywhere, with zero friction and full privacy.
+      </p>
+      <div class="hero-actions">
+        <button class="btn-primary">Download for Free</button>
+        <button class="btn-secondary">Watch Demo</button>
+      </div>
+    </div>
+
+    <div class="hero-mockup">
+      <div class="chat-header">
+        <span>WhatsApp 2 Preview</span>
+        <span>Online</span>
+      </div>
+      <div class="chat-bubble them">
+        Hey! Have you tried WhatsApp 2 yet?
+      </div>
+      <div class="chat-bubble me">
+        Just installed it—loving the speed and new features!
+      </div>
+      <div class="chat-bubble them">
+        Same here. Group calls feel so smooth now.
+      </div>
+      <div class="chat-bubble me">
+        And end‑to‑end encryption on everything. This is the future of messaging.
+      </div>
+    </div>
+  </section>
+
+  <!-- Features section -->
+  <section id="features" class="features">
+    <h2>Why WhatsApp 2?</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>Ultra‑Fast Messaging</h3>
+        <p>
+          Messages deliver in milliseconds, even on slow networks, thanks to our optimized
+          real‑time engine.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3>End‑to‑End Encryption</h3>
+        <p>
+          Every chat, call, and file is protected with advanced encryption—your conversations stay yours.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3>Smart Groups</h3>
+        <p>
+          Organize friends, family, and work with intelligent group tools, reactions, and shared media hubs.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3>Cross‑Device Sync</h3>
+        <p>
+          Seamlessly switch between phone, tablet, and desktop without losing context or history.
+        </p>
+      </div>
